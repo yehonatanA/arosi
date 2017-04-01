@@ -1,6 +1,8 @@
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { WareHouseComponent } from './ware-house/ware-house.component';
 
 const routes: Routes = [
     {
@@ -9,15 +11,11 @@ const routes: Routes = [
     // canActivate: [LoggedInGuardService],
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-      { path: 'dashboard', loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule'  },
+      { path: 'dashboard', component: DashboardComponent  },
+      { path: 'warehouse', component: WareHouseComponent  },
     ]
   }
 
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  providers: []
-})
-export class PagesRoutingModule { }
+export const routing = RouterModule.forChild(routes);

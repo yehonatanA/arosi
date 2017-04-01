@@ -5,13 +5,16 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { TopComponent } from './top/top.component';
 import { NavbarComponent } from './top/navbar/navbar.component';
 import { MenuComponent } from './top/menu/menu.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [NavbarComponent, BreadcrumbsComponent, TopComponent, MenuComponent],
-  exports: [NavbarComponent, BreadcrumbsComponent, TopComponent, MenuComponent]
+  exports: [NavbarComponent, BreadcrumbsComponent, TopComponent, MenuComponent],
+  providers: [MenuService]
 })
 export class BackofficeModule { 
       static forRoot():ModuleWithProviders {
