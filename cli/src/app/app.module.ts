@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BackofficeModule,
+    BackofficeModule.forRoot(),
     HttpModule
   ],
   providers: [],

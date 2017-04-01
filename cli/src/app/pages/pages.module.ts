@@ -1,3 +1,4 @@
+import { BackofficeModule } from '../backoffice/backoffice.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
@@ -6,8 +7,9 @@ import { PagesComponent } from './pages.component';
 @NgModule({
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    BackofficeModule.forRoot(),
   ],
-  declarations: [PagesComponent]
+  declarations: [PagesComponent],
 })
 export class PagesModule { }
