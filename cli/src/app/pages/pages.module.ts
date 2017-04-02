@@ -5,8 +5,11 @@ import { CommonModule } from '@angular/common';
 import { routing } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
 import { WareHouseComponent } from './ware-house/ware-house.component';
-import { DropdownModule, DataTableModule, SharedModule } from 'primeng/primeng';
 import { RouterModule } from '@angular/router';
+import { DropdownModule  } from 'primeng/components/dropdown/dropdown';
+import { SharedModule } from 'primeng/components/common/shared';
+import { DataTableModule  } from 'primeng/components/datatable/datatable';
+
 
 @NgModule({
   imports: [
