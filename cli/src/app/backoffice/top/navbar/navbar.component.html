@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="navbarExample">
     <ul class="sidebar-nav navbar-nav">
 
-        <li *ngFor="let item of menuItems" class="nav-item active" [ngClass]="{'active': selectedMenuItem === item}">
+        <li *ngFor="let item of menuItems" class="nav-item menu-item active" [ngClass]="{'active': selectedMenuItem === item}">
             <a class="nav-link" routerLink="{{item.url}}" (click)="selected(item)"><i class="fa fa-fw {{item.icon}}"></i> {{item.label}}</a>
         </li>
 

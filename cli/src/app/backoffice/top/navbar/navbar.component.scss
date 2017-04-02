@@ -1,0 +1,12 @@
+#mainNav .navbar-collapse .navbar-nav.sidebar {
+    right: 0 !important;
+}
+
+.menu-item {
+    text-align: right;
+    i {
+        float: right;
+        margin: 0 5px;
+        padding: 5px;
+    }
+}
