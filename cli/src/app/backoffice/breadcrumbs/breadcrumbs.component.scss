@@ -1,0 +1,7 @@
+.breadcrumb-item {
+    float: right;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+}

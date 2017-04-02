@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from '../top/menu/menu.service';
 
 @Component({
   selector: 'app-breadcrumbs',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private menuService: MenuService) { }
+
+  
+  public get selectedMenuItem() : string {
+    return this.menuService.selectedMenuItem;
+  }
+  
 
   ngOnInit() {
   }
