@@ -1,3 +1,5 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BackofficeModule } from '../backoffice/backoffice.module';
 import { NgModule } from '@angular/core';
@@ -6,21 +8,26 @@ import { routing } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
 import { WareHouseComponent } from './ware-house/ware-house.component';
 import { RouterModule } from '@angular/router';
-import { DropdownModule  } from 'primeng/components/dropdown/dropdown';
+//>> --------  primeng  components -----
+import { DropdownModule } from 'primeng/components/dropdown/dropdown';
 import { SharedModule } from 'primeng/components/common/shared';
-import { DataTableModule  } from 'primeng/components/datatable/datatable';
-
-
+import { DataTableModule } from 'primeng/components/datatable/datatable';
+import { InputSwitchModule } from 'primeng/components/inputswitch/inputswitch';
+import { MultiSelectModule } from 'primeng/components/multiSelect/multiSelect';
+import { YemenFormComponent } from './yemen-form/yemen-form.component';
+//<< --------  primeng  components -----
+const PRIMENG_COMPONENTS = [InputSwitchModule, MultiSelectModule,
+  DropdownModule, DataTableModule, SharedModule];
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule, FormsModule,
     RouterModule,
     routing,
     BackofficeModule.forRoot(),
-    DropdownModule, DataTableModule, SharedModule
+    ...PRIMENG_COMPONENTS
   ],
-  declarations: [PagesComponent, DashboardComponent, WareHouseComponent],
-  exports: [DashboardComponent, WareHouseComponent, 
-            DropdownModule, DataTableModule, SharedModule],
+  declarations: [PagesComponent, DashboardComponent, WareHouseComponent, YemenFormComponent],
+  exports: [DashboardComponent, WareHouseComponent,
+    ...PRIMENG_COMPONENTS],
 })
 export class PagesModule { }

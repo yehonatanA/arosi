@@ -12,6 +12,7 @@ export class MenuService implements OnDestroy {
 
   public menuItems: any[] = [
     { label: 'ראשי', url: '/pages/dashboard', icon: 'fa-dashboard' },
+    { label: 'טופס מרק תימני', url: '/pages/yemen', icon: 'fa-area-chart' },
     { label: 'הזמנות', url: '/pages/reservations', icon: 'fa-area-chart' },
     { label: 'מחסן', url: '/pages/warehouse', icon: 'fa-cogs' },
     { label: 'הגדרות', url: '/pages/settings', icon: 'fa-table' }
@@ -28,7 +29,7 @@ export class MenuService implements OnDestroy {
 
 
   private calcCurrent(): any {
-    return this.menuItems.find(x => window.location.href.indexOf(x.url) >= 0) || this.selectedMenuItem;
+    return this.menuItems.find(x => window.location.href.indexOf(x.url) >= 0) || this.selectedMenuItem || this.menuItems[0];
   }
 
 
