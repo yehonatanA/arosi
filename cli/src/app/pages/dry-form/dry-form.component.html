@@ -1,0 +1,186 @@
+<div class="container">
+  
+         <div class="col-12 text-center"> <h1>הזמנה חדשה - אוכל יבש</h1>    </div>
+
+
+  <form class="form-horizontal">
+    <div class="row">
+      <div class="col-6">
+        <label for="CustomerName">שם המזמין</label>
+        <input type="text" class="form-control" id="CustomerName">
+      </div>
+      <div class="col-6">
+        <label for="PhoneNo">טלפון</label>
+        <input type="number" class="form-control" id="PhoneNo">
+      </div>
+      <div class="col-4">
+        <label for="City">עיר</label>
+        <input type="text" class="form-control" id="City">
+      </div>
+      <div class="col-8">
+        <label for="Address">כתובת</label>
+        <input type="text" class="form-control" id="Address">
+      </div>
+
+      <div class="col-4">
+        <label for="DateOrder">תאריך</label>
+        <input type="number" class="form-control" id="DateOrder">
+      </div>
+      <div class="col-4">
+        <label for="Hour">שעה</label>
+        <input type="time" class="form-control" id="Hour">
+      </div>
+      <div class="col-4">
+        <label for="PriceOfUnit">מחיר למנה</label>
+        <input type="number" class="form-control" id="PriceOfUnit">
+      </div>
+
+      <div class="col-6">
+        <label for="Quantity">מס' מנות</label>
+        <input type="number" class="form-control" id="Quantity">
+      </div>
+      <div class="col-6">
+        <label for="Type">סוג האירוע</label>
+        <input type="text" class="form-control" id="Type">
+      </div>
+
+      <div class="col-4">
+        <div class="form-group">
+          <label for="MainCourse">סוגי עיקריות</label>
+          <select multiple class="form-control" id="MainCourseSelect">
+      <option>עוף בגריל</option>
+      <option>שאוויה</option>
+      <option>קציצות בשר ברוטב</option>
+      <option>סטייק פרגית</option>
+      <option>שניצל</option>
+      <option>קבב מזרחי</option>
+      <option>שניצל</option>
+      <option>כנפיים ברוטב צ'ילי מתוק וטריאקי</option>
+      <option>חזה עוף על הגריל</option>
+      <option>קציצות דג </option>
+    </select>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="form-group">
+          <label for="Extras">תוספות חמות</label>
+          <select multiple class="form-control" id="ExtrasSelect">
+      <option>פירה תפו"א</option>
+      <option>אורז לבן</option>
+      <option>אורז ירוק- בריאות!</option>
+      <option>ירקות מאודים</option>
+      <option>ספגטי ברוטב עגבניות</option>
+      <option>פתיתים</option>
+      <option>צ'יפס</option>
+      <option>תפו"א בתנור</option>
+    </select>
+        </div>
+      </div>
+
+      <div class="col-4">
+
+        <div class="form-group">
+          <label for="Salads">סלטים</label>
+          <select multiple class="form-control" id="SaladsSelect">
+      <option>חומוס</option>
+      <option>טחינה</option>
+      <option>חצילים במיונז</option>
+      <option>כרוב לבן במיונז</option>
+      <option>כרוב חמוץ בלימון</option>
+      <option>גזר פיקנטי</option>
+      <option>סלט ירקות</option>
+      <option>ירקות פלחים</option>
+      <option>סלט ירוק</option>
+      <option>גזר מרוקאי</option>
+      <option>סלק</option>
+      <option>סלט מלפפונים בשמיר</option>
+    </select>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <h3>כלים וציוד</h3>
+        <p>סמן ליד כל פריט את הכמות הנדרשת לאירוע</p>
+      </div>
+
+      <div class="col-4">
+        <label for="Tramporatim">טרמופורטים</label>
+        <input type="number" class="form-control" id="Tramporatim">
+      </div>
+      <div class="col-4">
+        <label for="SpoonsOfDivision">כפות חלוקה</label>
+        <input type="number" class="form-control" id="SpoonsOfDivision">
+      </div>
+      <div class="col-4">
+        <label for="Gastronom">גסטרונומים</label>
+        <input type="number" class="form-control" id="Gastronom">
+      </div>
+      <div class="col-4">
+        <label for="Forceps">מלקחיים</label>
+        <input type="number" class="form-control" id="Forceps">
+      </div>
+      <div class="col-4">
+        <label for="Pilot">פיילוט</label>
+        <input type="number" class="form-control" id="Pilot">
+      </div>
+      <div class="col-4">
+        <label for="Trays">מגשים</label>
+        <input type="number" class="form-control" id="Trays">
+      </div>
+
+   <!-- Total Amuont Details 
+      <hr>
+      <div class="col-12">
+        <h3 class="text-center">___________________________________________________________________________________</h3>
+      </div>
+
+      <div class="col-4">
+        <div class="list-group">
+          <h4 class="list-group-item disabled">הובלה</h4>
+          <p class="list-group-item">מחיר:200</p>
+
+          <div class="list-group-item">
+            <label for="DriverName">נהג</label>
+            <input type="text" class="form-control" id="DriverName">
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="list-group">
+          <h4 class="list-group-item disabled">
+            סה"כ
+          </h4>
+          <p class="list-group-item">מחיר: 2100 </p>
+          <p class="list-group-item">הובלה: 200</p>
+          <h5 class="list-group-item"><b>2300 ש"ח</b></h5>
+        </div>
+      </div> -->
+    </div>
+
+  </form>
+
+  <div class="jumbotron">
+  <div class="row">
+        
+ 
+
+       <!-- Total Amuont Details -->
+    
+       <div class="col-12">   <h3>סה"כ</h3>    </div>
+       <div class="col-6">  
+       <div class="col-6">  
+          <p>מחיר:<b> 2100 ש"ח</b></p>
+          <p>הובלה:<b> 200 ש"ח</b></p>
+          <h4>סה"כ: 2300 ש"ח</h4>
+      </div>
+      </div>
+
+       
+  </div>
+        
+
+  </div>
+         <a href="pages/dry_reservation" class=" col-12 btn btn-primary btn-lg" role="button"><i class="fa fa-fw fa-cutlery "></i>  אשר הזמנה על סך: 2300 ש"ח  <i class="fa fa-fw fa-check "></i></a>
+  
+</div>
+  

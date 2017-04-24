@@ -2,25 +2,33 @@
   <!-- Example Tables Card -->
             <div class="card mb-3">
                 <div class="card-header">
-                    <i class="fa fa-superpowers"></i> כלים וציוד
+                    <i class="fa fa-first-order"></i> כל ההזמנות
                 </div>
                 <div class="card-block">
                     <div class="table-responsive">
                         <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>כלי מס'</th>
-                                    <th>שם</th>
+                                    <th>הזמנה מס'</th>
+                                    <th>תאריך</th>
+                                    <th>לקוח</th>
+                                    <th>עיר</th>
+                                    <th>הובלה</th>
                                     <th>כמות</th>
+                                    <th>סה"כ</th>
                                 </tr>
                             </thead>
                
                             <tbody>
 
-                                <tr *ngFor="let Tool of Tools">
-                                    <td>{{Tool.Id}}</td>
-                                    <td>{{Tool.Name}}</td>
-                                    <td>{{Tool.Quantity}}</td>
+                                <tr *ngFor="let Order of Orders">
+                                    <td>{{Order.OrderNo}}</td>
+                                    <td>{{Order.DateOrder}}</td>
+                                    <td>{{Order.CustomerName}}</td>
+                                    <td>{{Order.City}}</td>
+                                    <td>{{Order.Delivery}}</td>
+                                    <td>{{Order.Quantity}}</td>
+                                    <td>{{Order.Amount}}</td>
                                 </tr>
                                
                             </tbody>

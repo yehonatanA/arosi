@@ -1,342 +1,210 @@
-<div class="container">
-  <h2 class="text-center"> הזמנה חדשה - מרק תימני </h2>
+   <div class="jumbotron">
+        <p>שלום, אריה</p>
+        <h1>בצע הזמנה חדשה</h1>
+        <p>למילוי הזמנה חדשה, אנא לחץ על סוג ההזמנה המתאימה ! </p>
+        <p>
+          <a href="pages/dry" class="btn btn-primary btn-lg" role="button"> <i class="fa fa-fw fa-cutlery "></i>אוכל יבש</a>
+          
+          <a href="pages/yemen" class="btn btn-success btn-lg" role="button"><i class="fa fa-fw fa-bookmark "></i>מרק תימני</a>
+       </p>
 
-  <form class="form-horizontal">
-    <div class="row">
-      <div class="col-6">
-        <label for="CustomerName">שם המזמין</label>
-        <input type="text" class="form-control" id="CustomerName">
-      </div>
-      <div class="col-6">
-        <label for="PhoneNo">טלפון</label>
-        <input type="number" class="form-control" id="PhoneNo">
-      </div>
-      <div class="col-4">
-        <label for="City">עיר</label>
-        <input type="text" class="form-control" id="City">
-      </div>
-      <div class="col-8">
-        <label for="Address">כתובת</label>
-        <input type="text" class="form-control" id="Address">
-      </div>
-
-      <div class="col-4">
-        <label for="DateOrder">תאריך</label>
-        <input type="number" class="form-control" id="DateOrder">
-      </div>
-      <div class="col-4">
-        <label for="Hour">שעה</label>
-        <input type="time" class="form-control" id="Hour">
-      </div>
-      <div class="col-4">
-        <label for="PriceOfUnit">מחיר למנה</label>
-        <input type="number" class="form-control" id="PriceOfUnit" placeholder="{{NewOrderView.PriceOfUnit}}">
-      </div>
-
-      <div class="col-6">
-        <label for="Quantity">מס' מנות מרק עוף</label>
-        <input type="number" class="form-control" id="Quantity">
-      </div>
-      <div class="col-6">
-        <label for="Type">סוג האירוע</label>
-        <input type="text" class="form-control" id="Type">
-      </div>
-
-      <div class="col-4">
-        <label for="MainCours">סוגי עיקריות</label>
-        <div class="list-group">
-          <p class="list-group-item"><b>עופות</b></p>
-          <p class="list-group-item"><b>תפו"א</b></p>
-          <p class="list-group-item"><b>חילבה</b></p>
-        </div>
-      </div>
-
-      <div class="col-4">
-        <label for="MainCours">ירקות</label>
-        <div class="list-group">
-          <p class="list-group-item"><b>עגבניה</b></p>
-          <p class="list-group-item"><b>מלפפונים</b></p>
-          <p class="list-group-item"><b>בצל</b></p>
-          <p class="list-group-item"><b>גמבה</b></p>
-          <p class="list-group-item"><b>לימונים</b></p>
-          <p class="list-group-item"><b>גרגיר מהדרין</b></p>
-        </div>
-      </div>
-
-      <div class="col-4">
-        <label for="MainCours">כלים וציוד</label>
-        <div class="list-group">
-          <p class="list-group-item"><b>כפפות</b></p>
-          <p class="list-group-item"><b>כלים חד פעמי </b> - קומפלט</p>
-        </div>
-      </div>
-
-      <div class="col-4">
-        <label for="MainCourse">תוספות</label>
-        <div class="list-group">
-          <p class="list-group-item">סחוג ירוק <input type="text" class="form-control left" id="Type"> </p>
-          <p class="list-group-item">סחוג אדום <input type="text" class="form-control left" id="Type"> </p>
-          <p class="list-group-item">ביסבס<input type="text" class="form-control left" id="Type"> </p>
-
-        </div>
-      </div>
-
-      <div class="col-4">
-        <label for="MainCourse">מאפים</label>
-        <div class="list-group">
-          <p class="list-group-item">גלוב<input type="text" class="form-control left" id="Type"> </p>
-          <p class="list-group-item">לחוח<input type="text" class="form-control left" id="Type"> </p>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <h3>כלים וציוד</h3>
-        <p>סמן ליד כל פריט את הכמות הנדרשת לאירוע</p>
-      </div>
-
-      <div class="col-4">
-        <label for="Tramporatim">טרמופורטים</label>
-        <input type="number" class="form-control" id="Tramporatim">
-      </div>
-      <div class="col-4">
-        <label for="SpoonsOfDivision">כפות חלוקה</label>
-        <input type="number" class="form-control" id="SpoonsOfDivision">
-      </div>
-      <div class="col-4">
-        <label for="Gastronom">גסטרונומים</label>
-        <input type="number" class="form-control" id="Gastronom">
-      </div>
-      <div class="col-4">
-        <label for="Forceps">מלקחיים</label>
-        <input type="number" class="form-control" id="Forceps">
-      </div>
-      <div class="col-4">
-        <label for="Pilot">פיילוט</label>
-        <input type="number" class="form-control" id="Pilot">
-      </div>
-      <div class="col-4">
-        <label for="Trays">מגשים</label>
-        <input type="number" class="form-control" id="Trays">
-      </div>
+  </div>
+       <div class="container-fluid">
 
 
-      <hr>
-      <div class="col-12">
-        <h3 class="text-center">___________________________________________________________________________________</h3>
-      </div>
+            <!-- Icon Cards -->
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-primary o-hidden h-100">
+                        <div class="card-block">
+                            <div class="card-block-icon">
+                                <i class="fa fa-fw fa-cutlery "></i>
+                            </div>
+                            <div class="mr-5">
+                             26 הזמנות - אוכל יבש
+                            </div>
+                        </div>
+                        <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">הצג פרטים</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-success o-hidden h-100">
+                        <div class="card-block">
+                            <div class="card-block-icon">
+                                <i class="fa fa-fw fa-bookmark"></i>
+                            </div>
+                            <div class="mr-5">
+                               12 הזמנות -מרק תימני
+                            </div>
 
-      <div class="col-4">
-        <div class="list-group">
-          <h4 class="list-group-item disabled">הובלה</h4>
-          <p class="list-group-item">מחיר:200</p>
-
-          <div class="list-group-item">
-            <label for="DriverName">נהג</label>
-            <input type="text" class="form-control" id="DriverName">
-          </div>
-        </div>
-      </div>
-      <div class="col-8">
-        <div class="list-group">
-          <h4 class="list-group-item disabled">
-            סה"כ
-          </h4>
-          <p class="list-group-item">מחיר: 2100 </p>
-          <p class="list-group-item">הובלה: 200</p>
-          <h5 class="list-group-item"><b>2300 ש"ח</b></h5>
-        </div>
-      </div>
+                        </div>
+                        <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">הצג פרטים</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-warning o-hidden h-100">
+                        <div class="card-block">
+                            <div class="card-block-icon">
+                                <i class="fa fa-fw fa-calendar"></i>
+                            </div>
+                            <div class="mr-5">
+                             16 הזמנות לחודש
+                            </div>
+                        </div>
+                        <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">הצג פרטים</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-danger o-hidden h-100">
+                        <div class="card-block">
+                            <div class="card-block-icon">
+                                <i class="fa fa-fw fa-calendar-o"></i>
+                            </div>
+                            <div class="mr-5">
+                                2 הזמנות להיום
+                            </div>
+                        </div>
+                        <a href="#" class="card-footer clearfix small z-1">
+                            <span class="float-left">הצג פרטים</span>
+                            <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
+  <!-- Example Tables Card -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <i class="fa fa-table"></i> הזמנות פעילות
+                </div>
+                <div class="card-block">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>הזמנה מס'</th>
+                                    <th>תאריך</th>
+                                    <th>לקוח</th>
+                                    <th>עיר</th>
+                                    <th>הובלה</th>
+                                    <th>כמות</th>
+                                    <th>סה"כ</th>
+                                </tr>
+                            </thead>
+               
+                            <tbody>
 
-    </div>
-  </form>
+                                <tr *ngFor="let Order of Orders">
+                                    <td>{{Order.OrderNo}}</td>
+                                    <td>{{Order.DateOrder}}</td>
+                                    <td>{{Order.CustomerName}}</td>
+                                    <td>{{Order.City}}</td>
+                                    <td>{{Order.Delivery}}</td>
+                                    <td>{{Order.Quantity}}</td>
+                                    <td>{{Order.Amount}}</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer small text-muted">
+                    מעודכן ל 21/04/2017
+                </div>
+            </div>
+
+<!-- Table 
+<div class="col-12">
+  <p-dataTable [value]="Orders">
+    <p-column field="OrderNo" header="מס' הזמנה'" [sortable]="true"></p-column>
+    <p-column field="DateOrder" header="תאריך" [sortable]="true"></p-column>
+    <p-column field="CustomerName" header="לקוח"></p-column>
+    <p-column field="City" header="עיר"></p-column>
+    <p-column field="Delivery" header="הובלה"></p-column>
+    <p-column field="Amount" header="סכום"></p-column>
+    <p-column field="Amount" Footer="CCC"></p-column>
+  </p-dataTable>
 </div>
+<h3>כלים</h3>-->
+<!-- Table 
+<div class="col-12">
+  <p-dataTable [value]="Tools">
+    <p-column field="Id" header="מזהה כלי" [sortable]="true"></p-column>
+    <p-column field="Name" header="שם כלי" [sortable]="true"></p-column>
+    <p-column field="Quantity" header="כמות" Footer="CCC"></p-column>
 
-<!-- ///////////////////////////////  NEW FORM  /////////////////////////////// -->
+  </p-dataTable>
+</div>-->
 
 
 
-
-<div class="container">
-  <h2 class="text-center"> הזמנה חדשה - אוכל יבש </h2>
-
-  <form class="form-horizontal">
-    <div class="row">
-      <div class="col-6">
-        <label for="CustomerName">שם המזמין</label>
-        <input type="text" class="form-control" id="CustomerName">
-      </div>
-      <div class="col-6">
-        <label for="PhoneNo">טלפון</label>
-        <input type="number" class="form-control" id="PhoneNo">
-      </div>
-      <div class="col-4">
-        <label for="City">עיר</label>
-        <input type="text" class="form-control" id="City">
-      </div>
-      <div class="col-8">
-        <label for="Address">כתובת</label>
-        <input type="text" class="form-control" id="Address">
-      </div>
-
-      <div class="col-4">
-        <label for="DateOrder">תאריך</label>
-        <input type="number" class="form-control" id="DateOrder">
-      </div>
-      <div class="col-4">
-        <label for="Hour">שעה</label>
-        <input type="time" class="form-control" id="Hour">
-      </div>
-      <div class="col-4">
-        <label for="PriceOfUnit">מחיר למנה</label>
-        <input type="number" class="form-control" id="PriceOfUnit">
-      </div>
-
-      <div class="col-6">
-        <label for="Quantity">מס' מנות</label>
-        <input type="number" class="form-control" id="Quantity">
-      </div>
-      <div class="col-6">
-        <label for="Type">סוג האירוע</label>
-        <input type="text" class="form-control" id="Type">
-      </div>
-
-      <div class="col-4">
-        <div class="form-group">
-          <label for="MainCourse">סוגי עיקריות</label>
-          <select multiple class="form-control" id="MainCourseSelect">
-      <option>עוף בגריל</option>
-      <option>שאוויה</option>
-      <option>קציצות בשר ברוטב</option>
-      <option>סטייק פרגית</option>
-      <option>שניצל</option>
-      <option>קבב מזרחי</option>
-      <option>שניצל</option>
-      <option>כנפיים ברוטב צ'ילי מתוק וטריאקי</option>
-      <option>חזה עוף על הגריל</option>
-      <option>קציצות דג </option>
-    </select>
+  
         </div>
-      </div>
-      <div class="col-4">
-        <div class="form-group">
-          <label for="Extras">תוספות חמות</label>
-          <select multiple class="form-control" id="ExtrasSelect">
-      <option>פירה תפו"א</option>
-      <option>אורז לבן</option>
-      <option>אורז ירוק- בריאות!</option>
-      <option>ירקות מאודים</option>
-      <option>ספגטי ברוטב עגבניות</option>
-      <option>פתיתים</option>
-      <option>צ'יפס</option>
-      <option>תפו"א בתנור</option>
-    </select>
-        </div>
-      </div>
-
-      <div class="col-4">
-
-        <div class="form-group">
-          <label for="Salads">סלטים</label>
-          <select multiple class="form-control" id="SaladsSelect">
-      <option>חומוס</option>
-      <option>טחינה</option>
-      <option>חצילים במיונז</option>
-      <option>כרוב לבן במיונז</option>
-      <option>כרוב חמוץ בלימון</option>
-      <option>גזר פיקנטי</option>
-      <option>סלט ירקות</option>
-      <option>ירקות פלחים</option>
-      <option>סלט ירוק</option>
-      <option>גזר מרוקאי</option>
-      <option>סלק</option>
-      <option>סלט מלפפונים בשמיר</option>
-    </select>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <h3>כלים וציוד</h3>
-        <p>סמן ליד כל פריט את הכמות הנדרשת לאירוע</p>
-      </div>
-
-      <div class="col-4">
-        <label for="Tramporatim">טרמופורטים</label>
-        <input type="number" class="form-control" id="Tramporatim">
-      </div>
-      <div class="col-4">
-        <label for="SpoonsOfDivision">כפות חלוקה</label>
-        <input type="number" class="form-control" id="SpoonsOfDivision">
-      </div>
-      <div class="col-4">
-        <label for="Gastronom">גסטרונומים</label>
-        <input type="number" class="form-control" id="Gastronom">
-      </div>
-      <div class="col-4">
-        <label for="Forceps">מלקחיים</label>
-        <input type="number" class="form-control" id="Forceps">
-      </div>
-      <div class="col-4">
-        <label for="Pilot">פיילוט</label>
-        <input type="number" class="form-control" id="Pilot">
-      </div>
-      <div class="col-4">
-        <label for="Trays">מגשים</label>
-        <input type="number" class="form-control" id="Trays">
-      </div>
-
-
-      <hr>
-      <div class="col-12">
-        <h3 class="text-center">___________________________________________________________________________________</h3>
-      </div>
-
-      <div class="col-4">
-        <div class="list-group">
-          <h4 class="list-group-item disabled">הובלה</h4>
-          <p class="list-group-item">מחיר:200</p>
-
-          <div class="list-group-item">
-            <label for="DriverName">נהג</label>
-            <input type="text" class="form-control" id="DriverName">
-          </div>
-        </div>
-      </div>
-      <div class="col-8">
-        <div class="list-group">
-          <h4 class="list-group-item disabled">
-            סה"כ
-          </h4>
-          <p class="list-group-item">מחיר: 2100 </p>
-          <p class="list-group-item">הובלה: 200</p>
-          <h5 class="list-group-item"><b>2300 ש"ח</b></h5>
-        </div>
-      </div>
+        <!-- /.container-fluid -->
 
 
 
 
 
-    </div>
-  </form>
-</div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
 <div class="row">
+
+
+
+  <div class="ui-g-12 ui-md-4">
+        <div class="card overview">
+            <div class="overview-content clearfix">
+                <span class="overview-title">Sales</span>
+                <span class="overview-badge">+%90</span>
+                <span class="overview-detail">$22,650 / week</span>
+            </div>
+            <div class="overview-footer">
+                <img src="assets/layout/images/dashboard/sales.svg" style="width: 100%">
+            </div>
+        </div>
+    </div>
+
+
+
   <div class="col-6">
     <div class="panel panel-default">
-      <!-- Default panel contents -->
+   
       <div class="panel-heading">
         <h4>שלום אריה</h4>
       </div>
@@ -361,28 +229,6 @@
 <br>
 
 
-<!-- Table -->
-<div class="col-12">
-  <p-dataTable [value]="Orders">
-    <p-column field="OrderNo" header="מס' הזמנה'" [sortable]="true"></p-column>
-    <p-column field="DateOrder" header="תאריך" [sortable]="true"></p-column>
-    <p-column field="CustomerName" header="לקוח"></p-column>
-    <p-column field="City" header="עיר"></p-column>
-    <p-column field="Delivery" header="הובלה"></p-column>
-    <p-column field="Amount" header="סכום"></p-column>
-    <p-column field="Amount" Footer="CCC"></p-column>
-  </p-dataTable>
-</div>
-<h3>כלים</h3>
-<!-- Table -->
-<div class="col-12">
-  <p-dataTable [value]="Tools">
-    <p-column field="Id" header="מזהה כלי" [sortable]="true"></p-column>
-    <p-column field="Name" header="שם כלי" [sortable]="true"></p-column>
-    <p-column field="Quantity" header="כמות" Footer="CCC"></p-column>
-
-  </p-dataTable>
-</div>
 
 
 
@@ -399,3 +245,4 @@
 <span *ngIf="!!selectedCity">{{selectedCity.name}}</span>
 
 <p-multiSelect [options]="Extras" [(ngModel)]="selectedExtras"></p-multiSelect>
+ -->

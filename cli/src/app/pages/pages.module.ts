@@ -15,6 +15,11 @@ import { DataTableModule } from 'primeng/components/datatable/datatable';
 import { InputSwitchModule } from 'primeng/components/inputswitch/inputswitch';
 import { MultiSelectModule } from 'primeng/components/multiSelect/multiSelect';
 import { YemenFormComponent } from './yemen-form/yemen-form.component';
+import { DryFormComponent } from './dry-form/dry-form.component';
+import { OrdersComponent } from './orders/orders.component';
+import { StatisticsReportsComponent } from './statistics-reports/statistics-reports.component';
+import { DeyReservationComponent } from './dey-reservation/dey-reservation.component';
+import { YemenReservationComponent } from './yemen-reservation/yemen-reservation.component';
 //<< --------  primeng  components -----
 const PRIMENG_COMPONENTS = [InputSwitchModule, MultiSelectModule,
   DropdownModule, DataTableModule, SharedModule];
@@ -26,7 +31,7 @@ const PRIMENG_COMPONENTS = [InputSwitchModule, MultiSelectModule,
     BackofficeModule.forRoot(),
     ...PRIMENG_COMPONENTS
   ],
-  declarations: [PagesComponent, DashboardComponent, WareHouseComponent, YemenFormComponent],
+  declarations: [PagesComponent, DashboardComponent, WareHouseComponent, YemenFormComponent, DryFormComponent, OrdersComponent, StatisticsReportsComponent, DeyReservationComponent, YemenReservationComponent],
   exports: [DashboardComponent, WareHouseComponent,
     ...PRIMENG_COMPONENTS],
 })

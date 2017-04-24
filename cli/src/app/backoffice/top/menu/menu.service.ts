@@ -11,11 +11,13 @@ export class MenuService implements OnDestroy {
   }
 
   public menuItems: any[] = [
-    { label: 'ראשי', url: '/pages/dashboard', icon: 'fa-dashboard' },
-    { label: 'טופס מרק תימני', url: '/pages/yemen', icon: 'fa-area-chart' },
-    { label: 'הזמנות', url: '/pages/reservations', icon: 'fa-area-chart' },
-    { label: 'מחסן', url: '/pages/warehouse', icon: 'fa-cogs' },
-    { label: 'הגדרות', url: '/pages/settings', icon: 'fa-table' }
+    { label: 'ראשי', url: '/pages/dashboard', icon: 'fa-home' },
+    { label: 'הזמנות', url: '/pages/Orders', icon: 'fa-first-order' },
+    { label: 'טופס מרק תימני', url: '/pages/yemen', icon: 'fa-bookmark' },
+    { label: 'טופס אוכל יבש ', url: '/pages/dry', icon: 'fa-cutlery' },
+    { label: 'דוחות וסטטיקסטיקות', url: '/pages/statistics-reports', icon: 'fa-area-chart' },
+    { label: 'כלים וציוד', url: '/pages/warehouse', icon: 'fa-superpowers' },
+    { label: 'הגדרות', url: '/pages/settings', icon: 'fa-cog' }
   ];
 
 

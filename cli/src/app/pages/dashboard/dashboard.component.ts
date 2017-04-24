@@ -14,7 +14,6 @@ export class DashboardComponent implements OnInit {
   Orders :Order[];
   OrderView :OrderView[];
   NewOrderView :OrderView;
-  Tools: Tool[];
   IsDeliverychecked: boolean;
   selectedExtras: string[];
   Extras: SelectItem[];
@@ -23,14 +22,11 @@ export class DashboardComponent implements OnInit {
   constructor() { 
     this.cities = [];
     this.Orders = [];
-    this.Tools = [];
+
     this.Extras = [];
     
     this.IsDeliverychecked = false;
-    this.NewOrderView =  new OrderView();
-     this.NewOrderView.City="מודעין";
-     this.NewOrderView.Adress="התאנים 45";
-     this.NewOrderView.PriceOfUnit=25;
+   
   }
 
   ngOnInit() {
@@ -42,18 +38,12 @@ export class DashboardComponent implements OnInit {
     this.cities.push({ label: 'Paris', value: { id: 5, name: 'Paris', code: 'PRS' } });
 
   
-    this.Orders.push({ OrderNo: '1000', DateOrder: '05/04/17', CustomerName: 'שימי הצב',City: 'רמת-גן',Delivery: 'כן',Quantity:'100',Amount: 2500});
-    this.Orders.push({ OrderNo: '1001', DateOrder: '12/04/17', CustomerName: 'איציק ואהובה',City: 'יהוד' ,Delivery: 'כן',Quantity:'80',Amount: 2000});
+    this.Orders.push({ OrderNo: '1000', DateOrder: '05/04/17', CustomerName: 'שמעון פחימה',City: 'רמת-גן',Delivery: 'כן',Quantity:'100',Amount: 2500});
+    this.Orders.push({ OrderNo: '1001', DateOrder: '12/04/17', CustomerName: 'איציק ואהובה נגר',City: 'יהוד' ,Delivery: 'כן',Quantity:'80',Amount: 2000});
     this.Orders.push({ OrderNo: '1002', DateOrder: '24/04/17', CustomerName: 'שלומי שבתאי',City: 'כפר-סבא', Delivery: 'כן',Quantity:'150',Amount: 3750});
 
 
-    this.Tools.push({ Id: '3000', Name: 'קומקום', Quantity: 40,});
-    this.Tools.push({ Id: '3001', Name: 'קלחת', Quantity: 18,});
-    this.Tools.push({ Id: '3002', Name: 'מגש', Quantity: 25,});
-    this.Tools.push({ Id: '3003', Name: 'מצקת', Quantity: 15,});
-    this.Tools.push({ Id: '3005', Name: 'מלקחיים', Quantity: 30,});
-    this.Tools.push({ Id: '3006', Name: 'טרמופורטים', Quantity: 10,});
-    this.Tools.push({ Id: '3007', Name: 'כפפות', Quantity: 12,});
+
     
         this.Extras.push({label:'sd', value:'ds'});
         this.Extras.push({label:'Rome', value:'Rome'});
@@ -107,6 +97,7 @@ export class OrderView {
     PhoneNo;
     Hour; // לשעה
     Type; // סוג האירוע
+    Group; // אוכל יבש , מרק תימני
     Quantity: Number  ; //כמות מנות
     PriceOfUnit;    //מחיר למנה
     MainCourse :Food[]; //סוגי עיקריות
@@ -118,6 +109,8 @@ export class OrderView {
     Delivery: Boolean; // הובלה
     ShippingPrice: ShippingPrice; // מחיר הובלה
     TotalAmount: Number; //  סה"כ
+    IsActive;Boolean;
+    PaymentReceived; // התקבל תשלום
     UserId; 
     Comments;
 
